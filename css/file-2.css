@@ -1,2 +1,124 @@
 /* write your CSS here */
+@import "//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css";
 
+html {
+    --scrollbarBG: #393f3e;
+    --thumbBG: #ffc107;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    /* border: 3px solid var(--scrollbarBG); */
+}
+
+footer {
+    /* just for demo */
+    text-align: center;
+    padding: 20px;
+    /* just for demo */
+
+    position: relative;
+    left: 0;
+    bottom: 0;
+    /* height: 60px; */
+    width: 100%;
+}
+
+header {
+    /* just for demo */
+    background-color: #F8F8F8;
+    border-top: 1px solid #E7E7E7;
+    text-align: center;
+    padding: 20px;
+    /* just for demo */
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 100%;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.nav li :hover {
+    color: black;
+}
+
+#myBtn {
+    background-color: #E7E7E7;
+}
+
+#myBtn:hover {
+    color: white;
+    background-color: #FFC107;
+}
+
+
+#home>* {
+    z-index: 100;
+}
+
+#home {
+    position: relative;
+    min-height: 90vh;
+    background-image: url(/images/4.jpeg);
+    background-size: cover;
+    display: flex;
+}
+
+.ftxt {
+    margin-left: 65%;
+    margin-top: 150px;
+}
+
+.fashion {
+    display: flex;
+    flex-direction: row;
+}
+
+.fashion:before,
+.fashion:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 0.5px solid #000;
+    margin: auto;
+}
+
+.bstrip {
+    background-color: #393F3E;
+    height: 200px;
+    position: fixed;
+    bottom: -100px;
+    left: 0px;
+    right: 0px;
+    z-index: -500;
+}
